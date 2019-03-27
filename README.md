@@ -102,13 +102,13 @@ v-for	|	|循环指令|`v-for="item in list"`
 
 
 ### Vue实例属性
-|属性|说明|使用场景
-|-|-|
+|属性|说明|使用场景|
+|-|-|-|
 computed	|	计算属性	|	异步场景
 watch		|	侦听器		|	数据联动
-el
-data
-methods
+el		||
+data 		||
+methods	||
 
 
 
