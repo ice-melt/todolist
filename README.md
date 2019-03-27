@@ -1,3 +1,12 @@
+<!-- MarkdownTOC -->
+
+- [前端练习项目-todolist](#前端练习项目-todolist)
+	- [环境搭建](#环境搭建)
+	- [Build Setup](#build-setup)
+	- [知识点整理](#知识点整理)
+
+<!-- /MarkdownTOC -->
+
 # 前端练习项目-todolist
 
 学习前端项目开发。
@@ -78,3 +87,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 # 重新安装一下
 cnpm install --global vue-cli 
 ```
+
+## 知识点整理
+
+|指令|简写|说明|
+|-|-|-|
+v-html	|	 |绑定模板
+v-bind	| :	|属性绑定
+v-on	|@	|事件绑定   
