@@ -31,3 +31,8 @@ cnpm install vue-style-loader vue-loader css-loader stylus stylus-loader
 npm run dev
 ```
 ### 学习笔记
+
+
+[环境搭建记录](https://github.com/ice-melt/web-design/blob/master/notes/build_env.md)
+
+[vue学习笔记](/notes/vue_learn_note.md)
