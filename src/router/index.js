@@ -4,8 +4,6 @@ import HelloWorld from '@/components/HelloWorld'
 import TodoList from '@/components/TodoList'
 import TodoList_Easy from '@/components/TodoList_Easy'
 
-
-
 Vue.use(Router)
 
 export default new Router({
@@ -18,7 +16,7 @@ export default new Router({
       path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
-    },{
+     },{
       path: '/TodoList',
       name: 'TodoList',
       component: TodoList

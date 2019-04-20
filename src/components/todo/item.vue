@@ -69,10 +69,10 @@
   float: left;
   margin-left: -270px;
   &:after{
-    content url('../../assets/images/round.svg')
+    content url('../../assets/img/round.svg')
   }
   &:checked:after{
-    content url('../../assets/images/done.svg')
+    content url('../../assets/img/done.svg')
   }
 }
 .destory{

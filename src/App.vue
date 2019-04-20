@@ -1,47 +1,73 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/HelloWorld">Vue项目首页</router-link> | 
-      <router-link to="/TodoList">TodoList</router-link> | 
-      <router-link to="/TodoList_Easy">TodoList_Easy</router-link>
-    </div>
-    <div>
+    <Menu mode="horizontal" :theme="theme1" active-name="1">
+        <MenuItem name="1">
+            <Icon type="ios-paper" />
+            <router-link to="/HelloWorld">Vue项目首页</router-link>
+        </MenuItem>
+        <MenuItem name="2">
+            <Icon type="ios-people" />
+            <router-link to="/TodoList">TodoList</router-link>
+            
+        </MenuItem>
+        <Submenu name="3">
+            <template slot="title">
+                <Icon type="ios-stats" />
+                统计分析
+            </template>
+            <MenuGroup title="使用">
+                <MenuItem name="3-1">新增和启动</MenuItem>
+                <MenuItem name="3-2">活跃分析</MenuItem>
+                <MenuItem name="3-3">时段分析</MenuItem>
+            </MenuGroup>
+            <MenuGroup title="留存">
+                <MenuItem name="3-4">用户留存</MenuItem>
+                <MenuItem name="3-5">流失用户</MenuItem>
+            </MenuGroup>
+        </Submenu>
+        <MenuItem name="4">
+            <Icon type="ios-construct" />
+            <router-link to="/TodoList_Easy">TodoList_Easy</router-link>
+            
+        </MenuItem>
+    </Menu>
+    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
-    </div>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+          return {
+              theme1: 'light'
+          }
+      }
 }
 </script>
 
-<style  lang='stylus'>
-html body
-  padding 0
-  margin 0
-  top 0 
-  left 0
-#app 
-    margin 0
-    padding 60px 0 0 0
-    width 100%
-    height 100%
-    position absolute
-    left 0
-    right 0
-    background-image url("./assets/images/bg.jpeg")
-    background-size cover
-    background-position center
-    font 14px 'microsoft yahei'
+<style lang="stylus" scoped>
+app, html body 
+    padding: 0;
+    margin: 0;
+
+#app
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url('./assets/img/bg.jpeg')
+    background-size: cover;
+    background-position: 50%;
+    font: 20px microsoft yahei;
     color: #4d4d4d;
-    font-smoothing:antialiased;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    font-weight 300
+    //color: #2c3e50;
+    font-smoothing: antialiased;
+    font-family: 'Avenir',Helvetica,Arial,sans-serif;
+    font-weight: 300;
     text-align: center;
- 
-#nav
-  padding-bottom 20px
+    user-select: none;
+
 </style>
